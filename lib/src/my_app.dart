@@ -1,11 +1,6 @@
-import 'package:anitocorn_smart_home/src/pages/login/login_page.dart';
 import 'package:flutter/material.dart';
-
-import 'src/pages/home/home_pages.dart';
-
-void main() {
-  runApp(const MyApp());
-}
+import 'pages/home/home_pages.dart';
+import 'pages/login/login_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,12 +8,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Smart Home',
       debugShowCheckedModeBanner: false,
+      title: 'Manage Stock',
       theme: ThemeData(
+        visualDensity: VisualDensity.adaptivePlatformDensity,
         primarySwatch: Colors.blue,
       ),
-      home: const LoginPage(),
+      home: const HomePage(),
     );
   }
 }

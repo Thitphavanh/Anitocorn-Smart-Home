@@ -1,4 +1,4 @@
-import 'package:anitocorn_smart_home/utils/smart_device_box.dart';
+import 'package:anitocorn_smart_home/src/utils/smart_device_box.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
